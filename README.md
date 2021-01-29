@@ -2,6 +2,8 @@
 
 This repo is a template to show how to intergrate TailWindUI with the Create-React-App repo.
 
+You can either fork this repo or follow the following instuctions on your own Create-React-App.
+
 ## Setup
 
 Install the required libraries and create the two config files by running the following commands:
