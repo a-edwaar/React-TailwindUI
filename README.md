@@ -67,3 +67,33 @@ Change the contents of `index.css` with the following:
 ```
 
 Now you should be able to add any TailwindUI componenets - be sure to check out [this extension](https://chrome.google.com/webstore/detail/tailwind-ui-react/binfindfddkgfibeajgkmjioklcgigjn) to auto generate react components from the html snippets.
+
+### Optional - Fonts
+
+All TailwindUI previews use the Inter var font. To do the same add the following to `public/index.html`:
+
+```
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+```
+
+Then replace `tailwind.config.js` with the following:
+
+```
+const defaultTheme = require('tailwindcss/defaultTheme')
+
+module.exports = {
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      },
+    },
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
