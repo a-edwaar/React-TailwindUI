@@ -1,4 +1,4 @@
-# Create-React-App with TailWindUI
+# Create-React-App with TailwindUI
 
 This repo is a template to show how to intergrate TailWindUI with the Create-React-App repo.
 
